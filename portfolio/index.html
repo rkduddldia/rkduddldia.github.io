@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>최가영 PORTFOLIO</title>
+<meta name="Title" content="최가영" />
+<meta name="Description" content="최가영은 열심히 노력하는 디자이너입니다." />
+<meta property="og:type" content="website">
+<meta property="og:title" content="GYportfolio">
+<meta property="og:url" content="http://rkduddldia.dothome.co.kr/gystagram/">
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi" name="viewport" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="./css/common.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<script type="text/javascript" src="/common/js/_basicFunction.js"></script>
+<script src="/common/js/common.js"></script>
+<script src="/common/js/jquery.bxslider.min.js"></script>
+<script src="/common/js/slick.min.js"></script>
+<script src="js/swiper.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5F5QXPRPRE"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-5F5QXPRPRE');
+</script>
+</head>
+<script src="/common/js/scrolloverflow.min.js"></script>
+<script src="/common/js/jquery.fullpage.min.js"></script>
+<script src="/common/js/jquery.cookie.js"></script>
+<script>
+$(function(){
+$('#fpWrap').fullpage({
+scrollOverflow: true,
+scrollOverflowReset: true,
+navigation: true,
+//scrollBar: true,
+normalScrollElements: ".ovBox",
+navigation: true,
+menu: '#fp-menu',
+anchors: ['main', 'profile', 'skill','experience', 'portfolio', 'contact'],
+
+
+afterLoad: function (anchorLink, index){
+
+if (index == 1 ){
+$('.fp_item1').addClass('on');
+$('#fp-menu > li').eq(0).addClass('on');
+}
+if(index == 2 ){
+$('.fp_item2').addClass('on');
+$('#fp-menu > li').eq(1).addClass('on');
+}
+if(index == 3){
+$('.fp_item3').addClass('on');
+$('#fp-menu > li').eq(2).addClass('on');
+}
+if(index == 4){
+$('.fp_item4').addClass('on');
+$('#fp-menu > li').eq(3).addClass('on');
+}
+if(index == 5){
+$('.fp_item5').addClass('on');
+$('#fp-menu > li').eq(3).addClass('on');
+}
+if(index == 6){
+$('.fp_item6').addClass('on');
+$('#fp-menu > li').eq(3).addClass('on');
+}
+
+},
+
+onLeave: function(index, nextIndex, direction){
+//console.log(nextIndex);
+$('#fp-menu > li').removeClass('on');
+$('#fp-menu > li').eq(nextIndex-1).addClass('on');
+
+
+if(nextIndex == 5){
+
+$('#fp-menu').removeClass('on');
+$('#container').removeClass('load');
+
+}else{
+
+$('#fp-menu').addClass('on');
+$('#container').addClass('load');
+}
+}
+
+});
+
+// $('#fp-menu').addClass('on');
+$(window).on('load',function(){
+$('#fp-menu').addClass('on');
+$('#container').addClass('load');
+});
+
+
+$slick_slider = $('.list_pl');
+
+$slick_slider.slick({
+slidesToShow: 3,
+slidesToScroll: 1,
+responsive: [
+{
+breakpoint: 1100,
+settings: {
+slidesToShow: 2,
+slidesToScroll: 1
+}
+},
+{
+breakpoint: 767,
+settings: {
+slidesToShow: 1,
+slidesToScroll: 1
+}
+}
+]
+});
+
+
+});
+</script>
+
+<body>
+
+
+<div id="wrap" class="main">
+<div id="header">
+<!--<h1><a href="#" class="logo">Choi GaYoung</a></h1>-->
+
+</div>
+
+<div id="container">
+    <div class="scrollDown">
+        <span><!--<img src="./images/mouse.png" alt="">--></span>
+        <p>>></p>
+    </div>
+<div id="fpWrap" class="fpWrap">
+
+
+<div id="" class="section fp_item fp_item1" >
+<div class="main_sec_cont fp_inner">
+<div class="txt_box">
+<p class="">have a Grit, cause we're still Young <br>Designer Choi GaYoung</p>
+<img src="./images/GY_logo.png" alt="GY_logo" class="main_logo" >
+</div>
+</div>
+</div>
+
+<div id="" class="section fp_item fp_item2">
+<div class="main_sec_cont fp_inner">
+<div class="txt_box">
+<span>PROFILE</span>
+<!--<ul>
+    <li>birth: 1997.10.17</li>
+    <li>tel: 010-4205-5931</li>
+    <li>e-mail: rkduddldia@gmail.com</li>
+</ul>-->
+<p>새로운 경험을 디자인하고, 그 경험을 통해 사용자의 일상에 긍정적인 변화를 선물하는 웹/UXUI 디자이너 최가영입니다. <br>항상 새로운 기술과 트렌드를 배우며 발전하고자 노력하며, 팀원들과의 적극적인 소통을 통해 최고의 시너지를 만들어나가는 데 기여하고 싶습니다.<br>저의 디자인이 세상에 작은 기여라도 할 수 있기를 기대합니다!</p>
+</div>
+<div class="txt_area profile">
+    <div>
+    <ul>
+        <li>
+            <strong>Work</strong><br>
+            <p>2020.05 - 2022.07<br>박씨상방<br>오픈마켓 상품 관리, 홈페이지 관리, <br>사진촬영, 상세페이지 작성, SNS 관리, 재고관리</p><br>
+            <p>to be continued</p><br>
+            <strong>Education</strong><br>
+            <p>2016.03 - 2018.02<br>명지전문대학<br>영어과</p><br>
+        </li>
+        <li>
+            
+        </li>
+        <li>
+            <strong>Professional Courses</strong><br>
+            <p>2019.05 - 2019.10<br>더조은컴퓨터학원 신촌점<br>웹퍼블리셔 UIUX프론테엔드</p><br>
+            <p>2023.10 - 2024.05<br>SBS컴퓨터아케데미<br>3D모델링 MAYA</p><br>
+            <p>2024.05 - 2024.12<br>KOSEA 인재개발원<br>스마트웹&하이브리드 앱 개발자 연수과정(백엔드&일본어)</p><br>
+            <p>2025.10 - 2025.12<br>그린컴퓨터아카데미<br>전산회계세무(회계1급+세무2급+FAT1급+TAT2급) 자격증취득과정</p>
+        </li>
+    </ul>
+    </div>
+</div>
+</div>
+</div>
+<div id="" class="section fp_item fp_item3">
+<div class="main_sec_cont fp_inner">
+<div class="txt_box">
+<span class="">Design</span>
+<div class="txt_area">
+    <div class="work">
+        <ul class="work_area">
+            <li>
+                <ul class="image">
+                    <li>
+                    <img src="./images/1.png" alt="GY_logo" class="design" >
+                    <img src="./images/2.png" alt="GY_logo" class="design" >
+                    <img src="./images/3.png" alt="GY_logo" class="design" >
+                    <img src="./images/4.png" alt="GY_logo" class="design" >
+                    <img src="./images/5.png" alt="GY_logo" class="design" >
+                    <img src="./images/6.png" alt="GY_logo" class="design" >
+                    <img src="./images/7.jpg" alt="GY_logo" class="design" >
+                    <img src="./images/3.jpg" alt="GY_logo" class="design" >
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div id="" class="section fp_item fp_item4">
+<div class="main_sec_cont fp_inner">
+<div class="txt_box">
+<span class="">SKILL</span>
+<div class="txt_area">
+<!--<p>다양한 경험을 통한 최적의 <br> <strong>개발 방안 제공</strong></p>-->
+    <div class="skill">
+        <div class="box have_box">
+            <h4>I HAVE...</h4>
+            <ul>
+                <li><span></span>전산세무2급 / 전산회계1급</li>
+                <li><span></span>TAT 2급</li>
+                <li><span></span>JLPTN3 / JPT590</li>
+                <li><span></span>컴퓨터그래픽스운용기능사</li>
+                <li><span></span>GTQ 1급 / GTQi 1급</li>
+                <li><span></span>MOS Expert Excel</li>
+                <li><span></span>1종보통 운전면허</li>
+            </ul>
+        </div>
+        <div class="box skills_box">
+            <h4>SKILLS</h4>
+            <ul>
+                <li><p>ps</p><span><span></span></span></li>
+                <li><p>ai</p><span><span></span></span></li>
+                <li><p>html</p><span><span></span></span></li>
+                <li><p>css</p><span><span></span></span></li>
+                <li><p>js</p><span><span></span></span></li>
+                <li><p>java</p><span><span></span></span></li>
+            </ul>
+        </div>
+        <div class="box need_box">
+            <h4>TOOLS</h4>
+            <ul>
+                <li><img href="ps.png" alt="">Photoshop</li>
+                <li><span></span>Illustrator</li>
+                <li><img href="./images/pr.png" alt="">Premiere Pro</li>
+                <li><span></span>Final Cut</li>
+                <li><span></span>KcLap</li>
+                <li><span></span>더존</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="" class="section fp_item fp_item5 fp-table">
+    <div class="main_sec_cont fp_inner">
+        <div class="txt_box">
+            <span class="">PORTFOLIO</span>
+            <div class="txt_area">
+            <!--<p>다양한 경험을 통한 최적의 <br> <strong>개발 방안 제공</strong></p>-->
+                <div class="portfolio" style="display: flex;padding: 3%;">
+                    <div class="portfolio_box box">
+                        <div class="onemount_slider slider">
+                            <a href="http://rkduddldia.dothome.co.kr/onemount/" target="_blank">원마운트 데스크탑</a>
+                            <div class="onemount_box slide">
+                                <img src="images/img_onemount_desktop.png" alt="원마운트데스크탑">
+                            </div>
+                            <div class="onemount_box slide">
+                                <img src="images/styleguide_onemount.png" alt="원마운트스타일가이드">
+                            </div>
+                            <div class="onemount_box slide">
+                                <p>포인트컬러는 로고에 있는 4가지 색을 중심을 뽑음<br>
+                                그 외에 컬러들은 포인트 컬러에서 명도,채도 등을 바꾸어서 사용<br>
+                                폰트는 나눔스퀘어라운드를 베이스로 전체적으로 동글동글한 느낌</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_box box">
+                        <div class="mOnemount_slider">
+                            <a href="http://rkduddldia.dothome.co.kr/mOnemount/" target="_blank">원마운트 모바일</a>
+                            <div class="mOnemount_box">
+                                <img src="images/img_onemount_mobile.png" alt="원마운트데스크탑">
+                            </div>
+                            <div class="mOnemount_box">
+                                <img src="images/styleguide_onemount.png" alt="원마운트스타일가이드">
+                            </div>
+                            <div class="mOnemount_box">
+                                <p>포인트컬러는 로고에 있는 4가지 색을 중심을 뽑음<br>
+                                    그 외에 컬러들은 포인트 컬러에서 명도,채도 등을 바꾸어서 사용<br>
+                                    폰트는 나눔스퀘어라운드를 베이스로 전체적으로 동글동글한 느낌</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_box box">
+                        <div class="gimganae_slider">
+                            <a href="http://rkduddldia.dothome.co.kr/gimganae/" target="_blank">김가네 반응형</a>
+                            <div class="mOnemount_box">
+                                <img src="images/img_gimganae.png" alt="원마운트데스크탑">
+                            </div>
+                            <div class="gimganae_box">
+                                <img src="styleguide_gimganae.png" alt="원마운트스타일가이드">
+                            </div>
+                            <div class="gimganae_box">
+                                <p>포인트컬러는 로고에 있는 4가지 색을 중심을 뽑음<br>
+                                    그 외에 컬러들은 포인트 컬러에서 명도,채도 등을 바꾸어서 사용<br>
+                                    폰트는 나눔스퀘어라운드를 베이스로 전체적으로 동글동글한 느낌</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_box box">
+                        <div class="gystagram_slider">
+                            <a href="https://rkduddldia.dothome.co.kr/gystagram/" target="_blank">첫 포트폴리오</a>
+                            <div class="gystagram_box">
+                                <img src="images/img_wings.png" alt="wings">
+                                <img src="images/gy_logo2.png" alt="로고">
+                                <img src="images/headcopy.png" alt="헤드카피">
+                            </div>
+                            <div class="gystagram_box">
+                                <img src="styleguide_gystagram.png" alt="원마운트스타일가이드">
+                            </div>
+                            <div class="gystagram_box">
+                                <p>설명필요
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="" class="section fp_item fp_item6">
+<div class="main_sec_cont fp_inner">
+<div class="txt_box">
+<span class="">CONTACT</span>
+<div class="txt_area">
+<strong>Designer Choi GaYoung</strong>
+<p>디자이너 최가영</p>
+<ul class="mainBtnList icon_list">
+<li><strong><a href="mailto:rkduddldia@gmail.com">rkduddldia@gmail.com</a></strong>
+<li><strong><a href='tel:+82-10-4205-5931'>+82-10-4205-5931</a></strong>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+function openWin(flag) {
+var target_layer_id;
+var blnCookie;
+
+target_layer_id = flag;
+blnCookie = getCookie(target_layer_id);
+if(!blnCookie) {
+document.getElementById(target_layer_id).style.display = "block";
+}
+}
+
+function close_popup_layer(flag) {
+var target_layer_id;
+if(flag >0) {
+target_layer_id = "DKG_popup_"+flag;
+//alert(target_layer_id);
+document.getElementById(target_layer_id).style.display = "none";
+}
+}
+function close_popup_layer_today(flag) {
+var target_layer_id;
+//alert(target_layer_id);
+if(flag >0) {
+target_layer_id = "DKG_popup_"+flag;
+document.getElementById(target_layer_id).style.display = "none";
+setCookie(target_layer_id, "done" , 1);
+}
+}
+function setCookie( name, value, expiredays ) {
+var todayDate = new Date();
+todayDate.setDate( todayDate.getDate() + expiredays );
+document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+function getCookie(name) {
+var nameOfCookie = name + "=";
+var x = 0;
+while ( x <= document.cookie.length )
+{
+var y = (x+nameOfCookie.length);
+if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+endOfCookie = document.cookie.length;
+return unescape( document.cookie.substring( y, endOfCookie ) );
+}
+x = document.cookie.indexOf( " ", x ) + 1;
+if ( x == 0 )
+break;
+}
+return "";
+}
+
+//]]>
+</script>
+</body>
+</html>
