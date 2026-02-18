@@ -290,7 +290,7 @@ label, a, button {-o-tap-highlight-color:rgba(0, 0, 0, 0);-ms-tap-highlight-colo
 
 /*.fp_item4 .box.need_box {margin-left: 0;}*/
 .fp_item4 .box.need_box span {display: none;}
-.fp_item4 .box.need_box img {width: 24px; height: 24px;}
+.fp_item4 .box.need_box img {width: 24px; height: 24px; padding: 5px;}
 
 
 .fp_item4 .box.have_box {background-image: url(../images/bg_yellow_memo.png);}
@@ -377,3 +377,4 @@ label, a, button {-o-tap-highlight-color:rgba(0, 0, 0, 0);-ms-tap-highlight-colo
     width: 100%;
     height: auto;                                                        
 }
+
